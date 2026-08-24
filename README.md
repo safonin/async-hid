@@ -1,5 +1,12 @@
-# async-hid
-A Rust library for asynchronously interacting with HID devices. 
+# openlogi-async-hid
+
+The OpenLogi-maintained fork of [async-hid](https://github.com/sidit77/async-hid), a Rust library for asynchronously interacting with HID devices.
+
+Version `0.5.3-openlogi.1` is based on upstream `0.5.3` and includes the macOS report-write fix from [upstream PR #46](https://github.com/sidit77/async-hid/pull/46). The package keeps the `async_hid` Rust library name, so downstream users can adopt it without source changes:
+
+```toml
+async-hid = { package = "openlogi-async-hid", version = "=0.5.3-openlogi.1" }
+```
 
 This crate aims to be a replacement for [hidapi-rs](https://github.com/ruabmbua/hidapi-rs) without the baggage that comes from being a wrapper around a C library.
 

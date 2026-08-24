@@ -1,14 +1,17 @@
 [package]
-name = "async-hid"
-version = "0.5.3"
-authors = [ "sidit77" ]
-repository = "https://github.com/sidit77/async-hid"
-description = "A async library for interacting with HID devices"
+name = "openlogi-async-hid"
+version = "0.5.3-openlogi.1"
+authors = [ "sidit77", "OpenLogi contributors" ]
+repository = "https://github.com/AprilNEA/async-hid"
+description = "OpenLogi-maintained async Rust library for interacting with HID devices"
 readme = "README.md"
 license = "MIT"
 keywords = ["hid", "usb", "async", "wrapper"]
 categories = ["api-bindings", "asynchronous", "hardware-support"]
 edition = "2021"
+
+[lib]
+name = "async_hid"
 
 [features]
 default = ["async-io", "win32"]
